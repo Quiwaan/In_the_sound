@@ -5,7 +5,7 @@ const Nav = () => {
     <div className="main-layout">
       <nav>
         <div class="nav-wrapper">
-          <a href="/" class="brand-logo">In The Sound</a>
+          <a href="/" className="brand-logo">Sound</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="badges.html">Analysis</a></li>
           </ul>

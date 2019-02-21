@@ -1,7 +1,11 @@
+.App {
+  text-align: center;
+}
 
 /* Home page css */
 .brand-logo {
   margin-left: 15px;
+  border-radius: 50%;
 }
 
 nav {

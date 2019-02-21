@@ -23,7 +23,7 @@ class Chart extends Component {
     }
   }
 
- BarGraph = {
+    BarGraph = {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
       datasets: [
         {
@@ -45,4 +45,4 @@ class Chart extends Component {
     )
    }
 }
-   export default Chart
+   export default Chart;
