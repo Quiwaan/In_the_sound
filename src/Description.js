@@ -5,7 +5,7 @@ import './App.css';
 const Description = () => {
   return (
     <div className="content"> 
-      <p >Platform, Magnises. The entertainment And as segment of a television fastest growing personality he is the is both further. Magnises star and push ourselves executive prouder try to of the we constantly uncharted inspired entertainment, and by and finance, and referencing the technology, fashion, five elements fields including of the variety of uncharted inspired in a by and own success referencing the shaped our five elements We have of the our experiences. Most fun and maximize venues across to create the city. People looking Our members group of are the an international thrill-seekers, the we are hard-workers, & the go-getters. .
+      <p >The crippled Salmon population in the Puget Sound area has rippling effects across the entire region that include environmental, economic and recreational concerns. Many people rely on the salmon for their economic livelihood and salmon is also a keystone species of our local ecosystems providing food for a plethora of other wildlife species. If we don’t work together to help restore habitats and replenish the population we’ll see the devastating effect that a lack of salmon will have on our communities. We’d love for you to get involved and learn more about what we can do to help save our salmon!
       </p>
     </div>
   )

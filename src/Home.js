@@ -15,7 +15,7 @@ const Home = () => {
       </video>
       <div className="overlay">
         <h2 className="heading">In the Sound</h2>
-        <p>Some more information</p>
+        <p>"The health of salmon populations reflects the overall health of Puget Sound."</p>
       </div>
       <Description />
       <Chart />
