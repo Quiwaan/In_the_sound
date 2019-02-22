@@ -33,7 +33,7 @@ class LearnMore extends Component {
     super()
     this.state = {
       value: 1973,
-      salmon_population: 0,
+      salmon_population: [2576590, 1388820, 2008472, 732689, 2090171, 707113, 581259, 2634443, 3392549, 2458882, 3259670, 1123305, 2639274, 2216030],
       lineGraph: {
         labels: [1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006],
         datasets: [
