@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 
-const Get_Involved = () => {
+const GetInvolved = () => {
   return (
     <div className="content-2"> 
       <h4><strong>Do your part by:</strong></h4>
@@ -18,4 +18,4 @@ const Get_Involved = () => {
 }
 
 
-export default Get_Involved;
+export default GetInvolved;
