@@ -4,8 +4,8 @@ class Data extends Component{
   render(){
     return (
       <div className="content">
-        <p>Here comes water data from props passed from the learn more parent component.</p>
-        <p>{this.props.waterToxicity}</p>
+        <p>Salmon Population for the year: </p>
+        <p>{this.props.salmon_population}</p>
       </div>
     )
   }
