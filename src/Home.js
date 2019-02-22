@@ -1,7 +1,7 @@
 import React from 'react';
 import video from './video/salmon.mp4';
 import './App.css';
-import Chart from './Chart';
+
 
 const Home = () => {
   return(
@@ -15,7 +15,6 @@ const Home = () => {
         <p className="main-on-top">Some more information</p>
         <i className="material-icons down"><a href="#">keyboard_arrow_down</a></i>
       </div>
-      <Chart />
     </div>
   )
 }
