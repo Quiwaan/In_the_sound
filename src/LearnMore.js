@@ -77,10 +77,12 @@ class LearnMore extends Component {
         <div>
           <Data waterToxicity={this.state.waterToxicity} />
         </div>
-        <div className="slider" style={wrapperStyle}>
-          <p>Choose the year</p>
-          <Slider min={0} defaultValue={25} marks={{ 0: 1979, 25: 1989, 50: 1999, 75: 2009, 100: 2019 }} step={null} onChange={this.handleChange} value={this.state.value}/>
-        </div> 
+        <div className="container-slider">
+          <div className="slider" style={wrapperStyle}>
+            <p>Choose the year</p>
+            <Slider min={0} defaultValue={25} marks={{ 0: 1979, 25: 1989, 50: 1999, 75: 2009, 100: 2019 }} step={null} onChange={this.handleChange} value={this.state.value}/>
+          </div> 
+        </div>
         <GetInvolved />
       </div>
     )

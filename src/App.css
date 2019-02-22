@@ -12,6 +12,7 @@ nav {
   height: 90px;
   width: 90px;
   margin: 5px;
+  left: 46.5%;
 }
 
 .video-wrapper {
@@ -46,16 +47,13 @@ nav {
 }
 
 .content {
-  border: 1px solid lightgrey;
   margin: 50px;
-  text-align: justify;
   padding: 10px 20px;
   font-family: 'Noto Serif', serif;
 }
 
 .content-2 {
-  border: 1px solid lightgrey;
-  margin:  0 50px 100px 50px;
+  margin:  100px 50px 100px 50px;
   padding: 10px 20px;
   font-family: 'Noto Serif', serif; 
 }
@@ -75,6 +73,7 @@ p {
 .learn-more-link {
   border: lightgrey 5px;
   padding: 20px;
+  color: #003DAF !important;
 }
 
 h4 {
@@ -89,14 +88,25 @@ h4 {
   margin: 30px;
 }
 
+.container-slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
 .slider {
   height: 50px !important;
+  width: 30%;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 600px) {
   .brand-logo {
     height: 50px;
     width: 50px;
+    left: 50%;  
   }
   nav {
     height: 60px;
@@ -127,5 +137,13 @@ h4 {
   }
   p {
     font-size: 1em;
+  }
+  .content {
+    border: 1px solid lightgrey;
+  }
+  .content-2 {
+    border: 1px solid lightgrey;
+    text-align: center;
+    margin-top: 30px;
   }
 }
