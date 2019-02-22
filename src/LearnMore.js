@@ -70,7 +70,6 @@ class LearnMore extends Component {
   }
 
 
-
   render(){
     return (
       <div>
