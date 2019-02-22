@@ -1,7 +1,9 @@
 import React from 'react';
 import video from './media/salmon.mp4';
 import './App.css';
-
+import Description from './Description.js';
+import Chart from './Chart';
+import Icons from './Icon';
 
 const Home = () => {
   return(
@@ -11,10 +13,13 @@ const Home = () => {
         Your browser does not support this video format.
       </video>
       <div className="overlay">
-        <h1 className="main-on-top">Welcome</h1>
-        <p className="main-on-top">Some more information</p>
-        <i className="material-icons down"><a href="#">keyboard_arrow_down</a></i>
+        <h2 className="heading">in the sound</h2>
+        <p>Some more information</p>
+        <i className="material-icons down"><a href="/">keyboard_arrow_down</a></i>
       </div>
+      <Description />
+      <Chart />
+      <Icons />
     </div>
   )
 }

@@ -2,24 +2,21 @@ import React, { Component } from 'react';
 import './App.css';
 import Nav from './layout/Nav.js';
 import Home from './Home.js';
-import Description from './Description.js';
-import Chart from './Chart';
-import Icons from './Icon';
-import Get_Involved from './Get_Involved';
-
+// import Get_Involved from './Get_Involved';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import LearnMore from './LearnMore'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <Nav />
-          <Home />
-          <Description />
-          <Chart />
-          <Icons />
-          <Get_Involved />
-        </header>
+        <Router>
+          <div>
+            <Nav />
+            <Home />
+            <Route path="/learn_more" component={() => (<LearnMore />)} />
+          </div>
+        </Router>
       </div>
     );
   }
