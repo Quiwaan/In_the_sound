@@ -4,10 +4,15 @@ import './App.css';
 
 const Get_Involved = () => {
   return (
-    <div className="content"> 
-      <h4>Get Involved</h4>
-      <p >Platform, Magnises. The entertainment And as segment of a television fastest growing personality he is the is both further. Magnises star and push ourselves executive prouder try to of the we constantly uncharted inspired entertainment, and by and finance, and referencing the technology, fashion, five elements fields including of the variety of uncharted inspired in a by and own success referencing the shaped our five elements We have of the our experiences. Most fun and maximize venues across to create the city. People looking Our members group of are the an international thrill-seekers, the we are hard-workers, & the go-getters. .
-      </p>
+    <div className="content-2"> 
+      <h4><strong>Do your part by:</strong></h4>
+        <ul>
+          <li><i className="material-icons">check</i> Driving Less</li>
+          <li><i className="material-icons">check</i> Natural yard care free of chemicals</li>
+          <li><i className="material-icons">check</i> Avoid single use plastics & excessive packaging</li>
+          <li><i className="material-icons">check</i> Join a volunteer cleanup or boat patrol </li>
+          <li><i className="material-icons">check</i> Give what you can to protect the sound </li>
+        </ul>
     </div>
   )
 }

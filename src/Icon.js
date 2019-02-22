@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Icons = () => {
   return(
     <div>
-      <h4 className="heading">What are the factors?</h4> 
+      <h4 className="heading-2"><strong>What are the factors?</strong></h4> 
       <p className="content">With the steadily declining salmon population, it means our beloved orcas, seagulls, seals, and other animals that rely on the Chinook salmon for food are directly affected. Orcas....</p>
       <div className="icons_all">
         <div className="icon">
