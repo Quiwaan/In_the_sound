@@ -18,7 +18,7 @@ class Chart extends Component {
             borderDash: [],
             borderDashOffset: 0.0,
             borderJoinStyle: 'miter',
-            pointBorderColor: 'rgba(75,192,192,1)',
+            pointBorderColor: 'pink',
             pointBackgroundColor: '#fff',
             pointBorderWidth: 1,
             pointHoverRadius: 5,
@@ -32,14 +32,19 @@ class Chart extends Component {
               
           }
         ]
+
       }
+    
     }
   }
 
+
+  
   render(){
     return (
       <div className="line-graph">
-          <Line data={this.state.lineGraph} />
+          <Line data={this.state.lineGraph}
+          options={this.state.options} />
       </div>
     )
   }
