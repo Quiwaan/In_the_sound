@@ -6,15 +6,24 @@ import Home from './Home.js';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import LearnMore from './LearnMore'
 
+
 class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      linkClicked: false
+    }
+  }
+
+
   render() {
     return (
       <div className="App">
         <Router>
           <div>
             <Nav />
-            <Home />
-            <Route path="/learn_more" component={() => (<LearnMore />)} />
+            <Route exact path="/" component={() => (<Home />)} />
+            <Route path="/learn_more" component={() => (<LearnMore  />)} />
           </div>
         </Router>
       </div>

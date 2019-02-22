@@ -5,6 +5,7 @@ import Description from './Description.js';
 import Chart from './Chart';
 import Icons from './Icon';
 
+
 const Home = () => {
   return(
     <div className="video_wrapper">
@@ -19,7 +20,7 @@ const Home = () => {
       </div>
       <Description />
       <Chart />
-      <Icons />
+      <Icons /> 
     </div>
   )
 }

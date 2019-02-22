@@ -23,8 +23,8 @@ const Icons = () => {
           <img src={Warning} alt="warning_img" className="icon-circles" />
           <p>Pollution</p>
         </div>
-        <p><Link to="/learn_more">Learn More</Link></p>
       </div>
+        <p className="learn-more-link"><Link to="/learn_more">Learn More</Link></p>
     </div>
   )
 }
