@@ -3,14 +3,18 @@
 }
 
 /* Home page css */
-.brand-logo {
-  margin-left: 15px;
-  border-radius: 50%;
-}
-
 nav {
   background-color: black !important;
+  height: 100px;
 }
+
+.brand-logo {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  margin: 5px 0;
+}
+
 
 .video-wrapper {
   position: relative;
@@ -34,4 +38,21 @@ nav {
 .down a {
   margin-top: 100px;
   color: white;
+}
+
+
+@media (max-width: 600px) {
+  .brand-logo {
+    height: 50px;
+    width: 50px;
+  }
+  nav {
+    height: 60px;
+  }
+  .overlay {
+    text-align: center;
+    top: 15%;
+    width: 100%;
+    height: 30%;
+  }
 }

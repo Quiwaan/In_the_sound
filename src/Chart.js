@@ -5,7 +5,7 @@ class Chart extends Component {
   constructor(props){
     super(props)
     this.state = {
-      BarGraph: {
+      barGraph: {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [
           {
@@ -40,7 +40,7 @@ class Chart extends Component {
     render(){
     return (
       <div>
-          <Bar data={data} />
+          <Bar data={this.state.barGraph} />
       </div>
     )
    }

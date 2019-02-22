@@ -1,14 +1,12 @@
 import React from 'react';
+import Salmon from '../media/salmon.png';
 
 const Nav = () => {
   return(
     <div className="main-layout">
       <nav>
         <div class="nav-wrapper">
-          <a href="/" className="brand-logo">Sound</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="badges.html">Analysis</a></li>
-          </ul>
+          <a href="/"><img src={Salmon} alt="salmon-logo" className="brand-logo" /></a>
         </div>
       </nav>
     </div>
