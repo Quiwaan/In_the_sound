@@ -6,6 +6,7 @@ import Tooltip from 'rc-tooltip';
 import 'rc-slider/assets/index.css';
 import 'rc-tooltip/assets/bootstrap.css';
 import Data from './Data';
+import {Line} from 'react-chartjs-2';
 
 const Handle = Slider.Handle;
 const createSliderWithTooltip = Slider.createSliderWithTooltip;
@@ -32,9 +33,39 @@ class LearnMore extends Component {
     super()
     this.state = {
       value: 1973,
-      waterToxicity: 0
+      salmon_population: 0,
+      lineGraph: {
+        labels: [1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006],
+        datasets: [
+          {
+            label: 'Water Quality',
+            fill: false,
+            lineTension: 0.1,
+            backgroundColor: 'rgba(75,192,192,0.4)',
+            borderColor: 'rgba(75,192,192,1)',
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            pointBorderColor: 'rgba(75,192,192,1)',
+            pointBackgroundColor: '#fff',
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+            pointHoverBorderColor: 'rgba(220,220,220,1)',
+            pointHoverBorderWidth: 2,
+            pointRadius: 1,
+            pointHitRadius: 10,
+            data: [83, 77, 82, 76, 89, 83, 92, 91, 89, 81, 74, 75, 89, 75]
+ 
+          }
+        ]
+      }
     }
   }
+
+    
+
 
   componentDidMount() {
     this.handleChange()
@@ -76,6 +107,9 @@ class LearnMore extends Component {
         <img src={Pollutants} alt="pollutants chart" className="pollutants-chart"/>
         <div>
           <Data waterToxicity={this.state.waterToxicity} />
+        </div>
+        <div className="line-graph">
+          <Line data={this.state.lineGraph} />
         </div>
         <div className="container-slider">
           <div className="slider" style={wrapperStyle}>
