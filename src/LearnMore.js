@@ -26,14 +26,28 @@ const handle = (props) => {
   )
 }
 
-const wrapperStyle = { width: 300, margin: 50 };
+const wrapperStyle = { width: 1500, margin: 50 };
 
 class LearnMore extends Component {
   constructor(){
     super()
     this.state = {
       value: 1973,
-      salmon_population: 0,
+      year_to_salmon: {
+        0:  2576590, 
+        10: 1388820, 
+        20: 2008472, 
+        30: 732689, 
+        35: 2090171, 
+        40: 707113, 
+        50: 581259, 
+        60: 2634443, 
+        70: 3392549, 
+        80: 2458882, 
+        90: 3259670, 
+        95: 1123305, 
+        100: 2639274
+      },
       lineGraph: {
         labels: [1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006],
         datasets: [
@@ -83,21 +97,9 @@ class LearnMore extends Component {
 
   // Hard coded data to pass down
   getData = () => {
-    if(this.state.value === 0){
-      this.setState({waterToxicity: 0})
-    }
-    if(this.state.value === 25){
-      this.setState({waterToxicity: 1})
-    }
-    if(this.state.value === 50){
-      this.setState({waterToxicity: 2})
-    }
-    if(this.state.value === 75){
-      this.setState({waterToxicity: 3})
-    }
-    if(this.state.value === 100){
-      this.setState({waterToxicity: 4})
-    }   
+
+      this.setState({salmon_population: this.state.year_to_salmon[this.state.value]})
+
   }
 
 
@@ -105,16 +107,16 @@ class LearnMore extends Component {
     return (
       <div>
         <img src={Pollutants} alt="pollutants chart" className="pollutants-chart"/>
-        <div>
-          <Data waterToxicity={this.state.waterToxicity} />
-        </div>
         <div className="line-graph">
           <Line data={this.state.lineGraph} />
         </div>
+        <div>
+          <Data salmon_population={this.state.salmon_population} />
+        </div>
         <div className="container-slider">
           <div className="slider" style={wrapperStyle}>
-            <p>Choose the year</p>
-            <Slider min={0} defaultValue={25} marks={{ 0: 1979, 25: 1989, 50: 1999, 75: 2009, 100: 2019 }} step={null} onChange={this.handleChange} value={this.state.value}/>
+            <p>Choose the year:</p>
+            <Slider min={0} defaultValue={25} marks={{ 0: 1994, 10: 1995, 20: 1996, 30: 1997, 35: 1998, 40: 1999, 50: 2000, 60: 2001, 70: 2002, 80: 2003, 90: 2004, 95: 2005, 100: 2006 }} step={null} onChange={this.handleChange} value={this.state.value}/>
           </div> 
         </div>
         <GetInvolved />
