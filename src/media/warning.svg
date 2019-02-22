@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="181px" height="181px" viewBox="0 0 181 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>warning icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="warning-icon" transform="translate(1.000000, 1.000000)">
+            <g id="warning">
+                <circle id="Oval" stroke="#000000" fill="#FFFFFF" cx="89.5" cy="89.5" r="89.5"></circle>
+                <polygon id="Triangle" stroke="#000000" stroke-width="7" fill="#FFFFFF" points="90 7 159 131 21 131"></polygon>
+                <text id="!" font-family="Arial-BoldMT, Arial" font-size="102" font-weight="bold" fill="#000000">
+                    <tspan x="73.0166016" y="119">!</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

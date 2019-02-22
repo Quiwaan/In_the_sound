@@ -4,6 +4,7 @@ import Nav from './layout/Nav.js';
 import Home from './Home.js';
 import Description from './Description.js';
 import Chart from './Chart';
+import Icons from './Icon';
 
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
           <Home />
           <Description />
           <Chart />
+          <Icons />
         </header>
       </div>
     );

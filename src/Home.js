@@ -1,12 +1,12 @@
 import React from 'react';
-import video from './video/salmon.mp4';
+import video from './media/salmon.mp4';
 import './App.css';
 
 
 const Home = () => {
   return(
     <div className="video_wrapper">
-      <video id="video" width="100%" height="100%" type="video/mp4" loop autoPlay>
+      <video id="video" width="100%" height="100%" loop autoPlay>
         <source src={video} type="video/mp4" />
         Your browser does not support this video format.
       </video>
