@@ -14,7 +14,7 @@ const Home = () => {
         Your browser does not support this video format.
       </video>
       <div className="overlay">
-        <h2 className="heading">in the sound</h2>
+        <h2 className="heading">In the Sound</h2>
         <p>Some more information</p>
         <i className="material-icons down"><a href="/">keyboard_arrow_down</a></i>
       </div>
